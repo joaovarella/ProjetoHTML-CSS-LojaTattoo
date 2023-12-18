@@ -1,0 +1,63 @@
+@import url('https://fonts.cdnfonts.com/css/glitch-goblin?styles=153354');
+
+:root{
+    --texto-titulo: 'Glitch Goblin', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 5% 0 2%;
+    background-color: black;
+}
+
+.menunav{
+    display: flex;
+    gap: 80px;
+}
+
+.menunav a{
+    text-decoration: none;
+    font-family: var(--texto-titulo);
+    font-size: 15px;
+    color: white;
+}
+
+#logo{
+    width: 5%;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 24vw);
+    grid-gap: 20px;
+    padding: 5% 2%;
+}
+
+.gallery__item{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    align-items: center;
+    gap: 3%;
+    padding: 10% 0;
+}
+
+.gallery__img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
